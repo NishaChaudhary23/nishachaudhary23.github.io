@@ -3,70 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nisha Chaudhary - Portfolio</title>
+    <title>Nisha Chaudhary</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
-        nav {
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
             display: flex;
-            justify-content: center;
-            background: rgba(0, 0, 0, 0.9);
-            padding: 15px;
+            background-color: #f8f9fa;
+        }
+        nav {
+            width: 250px;
+            height: 100vh;
+            background-color: #343a40;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 20px;
             position: fixed;
-            width: 100%;
-            top: 0;
-            left: 0;
-            z-index: 1000;
+        }
+        nav img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            object-fit: cover;
         }
         nav a {
             color: white;
-            margin: 0 20px;
             text-decoration: none;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-        nav a:hover {
-            color: #ffcc00;
-        }
-        header {
-            color: white;
-            text-align: center;
-            padding: 150px 20px;
-        }
-        .container { max-width: 1000px; margin: auto; padding: 80px 20px; text-align: center; }
-        .profile-img {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            margin-top: 20px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-            object-fit: cover;
-        }
-        .btn {
-            background: #007BFF;
-            color: white;
-            padding: 15px 30px;
-            text-decoration: none;
-            display: inline-block;
-            margin-top: 20px;
-            border-radius: 5px;
+            margin: 10px 0;
             font-size: 18px;
             transition: 0.3s;
         }
+        nav a:hover {
+            color: #ffc107;
+        }
+        .content {
+            margin-left: 270px;
+            padding: 50px;
+            max-width: 900px;
+        }
+        h1, h2 {
+            color: #343a40;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
         .btn:hover {
             background: #0056b3;
-        }
-        section { background: white; margin: 20px; border-radius: 10px; padding: 60px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
-        footer {
-            background: #222;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: 40px;
         }
     </style>
 </head>
 <body>
     <nav>
+        <img src="your-photo.jpg" alt="Nisha Chaudhary">
+        <h2>Nisha Chaudhary</h2>
+        <p>PhD in Computational Pathology</p>
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#news">News</a>
@@ -74,48 +73,38 @@
         <a href="#contact">Contact</a>
     </nav>
     
-    <header>
-        <h1>Nisha Chaudhary</h1>
-        <p>PhD in Computational Pathology</p>
-        <img src="your-photo.jpg" alt="Nisha Chaudhary" class="profile-img">
-    </header>
-    
-    <section id="about" class="container">
-        <h2>About Me</h2>
-        <p>Every patient is now a ‘big data’ challenge. My research focuses on microscopy image analysis and machine learning for computational pathology.</p>
-        <p>According to ICMR, around 1300 Indians lose their lives to cancer daily. Early detection and AI-based diagnostics can help mitigate this issue.</p>
-        <p>My goal is to integrate machine intelligence into pathology for more accurate and early disease detection.</p>
-    </section>
-
-    <section id="projects" class="container">
-        <h2>Projects & Research</h2>
-        <p>Explore my latest research and projects in computational pathology.</p>
-        <a href="#" class="btn">View Projects</a>
-    </section>
-    
-    <section id="news" class="container">
-        <h2>News</h2>
-        <p><strong>PhD Thesis Submitted:</strong> AI-based oral cancer diagnosis submitted on 9 September 2024.</p>
-        <p><strong>Publication:</strong> "High-resolution AI image dataset" published in Nature on 27 September 2024.</p>
-        <p><strong>Patent Granted:</strong> Digital pathology AI system approved by Govt. of India on 24 December 2024.</p>
-    </section>
-    
-    <section id="resume" class="container">
-        <h2>Resume</h2>
-        <p>Download my latest resume below:</p>
-        <a href="resume.pdf" class="btn" target="_blank">Download Resume</a>
-    </section>
-
-    <section id="contact" class="container">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:nisha152810@st.jmi.ac.in">nisha152810@st.jmi.ac.in</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/nisha-chaudhary-33b6a425b/">linkedin.com/in/nisha-chaudhary-33b6a425b</a></p>
-        <p>GitHub: <a href="https://github.com/NishaChaudhary23">github.com/NishaChaudhary23</a></p>
-        <p>Twitter (X): <a href="https://x.com/Nisha9293">x.com/Nisha9293</a></p>
-    </section>
-    
-    <footer>
-        <p>&copy; 2025 Nisha Chaudhary. All Rights Reserved.</p>
-    </footer>
+    <div class="content">
+        <section id="about">
+            <h1>About Me</h1>
+            <p>Every patient is now a ‘big data’ challenge. My research focuses on microscopy image analysis and machine learning for computational pathology.</p>
+        </section>
+        
+        <section id="projects">
+            <h2>Projects & Research</h2>
+            <p>Explore my latest research and projects in computational pathology.</p>
+            <a href="#" class="btn">View Projects</a>
+        </section>
+        
+        <section id="news">
+            <h2>News</h2>
+            <p><strong>PhD Thesis Submitted:</strong> AI-based oral cancer diagnosis submitted on 9 September 2024.</p>
+            <p><strong>Publication:</strong> "High-resolution AI image dataset" published in Nature on 27 September 2024.</p>
+            <p><strong>Patent Granted:</strong> Digital pathology AI system approved by Govt. of India on 24 December 2024.</p>
+        </section>
+        
+        <section id="resume">
+            <h2>Resume</h2>
+            <p>Download my latest resume below:</p>
+            <a href="resume.pdf" class="btn" target="_blank">Download Resume</a>
+        </section>
+        
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:nisha152810@st.jmi.ac.in">nisha152810@st.jmi.ac.in</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/nisha-chaudhary-33b6a425b/">linkedin.com/in/nisha-chaudhary-33b6a425b</a></p>
+            <p>GitHub: <a href="https://github.com/NishaChaudhary23">github.com/NishaChaudhary23</a></p>
+            <p>Twitter (X): <a href="https://x.com/Nisha9293">x.com/Nisha9293</a></p>
+        </section>
+    </div>
 </body>
 </html>
