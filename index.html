@@ -6,66 +6,116 @@
     <title>Nisha Chaudhary</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             display: flex;
-            background-color: #f8f9fa;
+            background-color: #ffffff;
+            color: #333;
         }
         nav {
-            width: 250px;
+            width: 260px;
             height: 100vh;
-            background-color: #343a40;
-            color: white;
+            background-color: #f8f9fa;
+            color: black;
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding-top: 20px;
+            padding-top: 30px;
             position: fixed;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
         }
         nav img {
-            width: 120px;
-            height: 120px;
+            width: 130px;
+            height: 130px;
             border-radius: 50%;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
             object-fit: cover;
         }
+        nav h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        nav p {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
         nav a {
-            color: white;
+            color: black;
             text-decoration: none;
             margin: 10px 0;
             font-size: 18px;
             transition: 0.3s;
         }
         nav a:hover {
-            color: #ffc107;
+            color: #007BFF;
+        }
+        .social-icons a {
+            margin: 5px;
+            font-size: 24px;
+            color: #333;
+            transition: 0.3s;
+        }
+        .social-icons a:hover {
+            color: #007BFF;
         }
         .content {
-            margin-left: 270px;
+            margin-left: 280px;
             padding: 50px;
             max-width: 900px;
+            display: flex;
+            flex-direction: column;
+        }
+        .about-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .about-text {
+            max-width: 60%;
+        }
+        .about-image img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
         }
         h1, h2 {
-            color: #343a40;
+            color: #222;
+            font-weight: bold;
+        }
+        section {
+            margin-bottom: 60px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid #ddd;
         }
         .btn {
             display: inline-block;
-            padding: 10px 20px;
+            padding: 12px 25px;
             background: #007BFF;
             color: white;
             text-decoration: none;
             border-radius: 5px;
             margin-top: 10px;
+            font-size: 16px;
+            transition: 0.3s;
         }
         .btn:hover {
             background: #0056b3;
         }
     </style>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav>
         <img src="your-photo.jpg" alt="Nisha Chaudhary">
         <h2>Nisha Chaudhary</h2>
         <p>PhD in Computational Pathology</p>
+        <p>Email: <a href="mailto:nisha152810@st.jmi.ac.in">nisha152810@st.jmi.ac.in</a></p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/nisha-chaudhary-33b6a425b/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/NishaChaudhary23" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://x.com/Nisha9293" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#news">News</a>
@@ -74,9 +124,14 @@
     </nav>
     
     <div class="content">
-        <section id="about">
-            <h1>About Me</h1>
-            <p>Every patient is now a ‘big data’ challenge. My research focuses on microscopy image analysis and machine learning for computational pathology.</p>
+        <section id="about" class="about-container">
+            <div class="about-text">
+                <h1>About Me</h1>
+                <p>Every patient is now a ‘big data’ challenge. My research focuses on microscopy image analysis and machine learning for computational pathology.</p>
+            </div>
+            <div class="about-image">
+                <img src="your-photo.jpg" alt="Nisha Chaudhary">
+            </div>
         </section>
         
         <section id="projects">
@@ -87,23 +142,15 @@
         
         <section id="news">
             <h2>News</h2>
-            <p><strong>PhD Thesis Submitted:</strong> AI-based oral cancer diagnosis submitted on 9 September 2024.</p>
-            <p><strong>Publication:</strong> "High-resolution AI image dataset" published in Nature on 27 September 2024.</p>
-            <p><strong>Patent Granted:</strong> Digital pathology AI system approved by Govt. of India on 24 December 2024.</p>
+            <p><strong>9 September 2024:</strong> PhD Thesis Submitted - AI-based oral cancer diagnosis.</p>
+            <p><strong>27 September 2024:</strong> Publication - "High-resolution AI image dataset" published in Nature.</p>
+            <p><strong>24 December 2024:</strong> Patent Granted - Digital pathology AI system approved by Govt. of India.</p>
         </section>
         
         <section id="resume">
             <h2>Resume</h2>
             <p>Download my latest resume below:</p>
             <a href="resume.pdf" class="btn" target="_blank">Download Resume</a>
-        </section>
-        
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:nisha152810@st.jmi.ac.in">nisha152810@st.jmi.ac.in</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/nisha-chaudhary-33b6a425b/">linkedin.com/in/nisha-chaudhary-33b6a425b</a></p>
-            <p>GitHub: <a href="https://github.com/NishaChaudhary23">github.com/NishaChaudhary23</a></p>
-            <p>Twitter (X): <a href="https://x.com/Nisha9293">x.com/Nisha9293</a></p>
         </section>
     </div>
 </body>
